@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/Samuditha, (1)-photoaidcom-cropped.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Samuditha</span> <br> from Sri Lanka</h1>
+                <div class="social-icons-home">
+                    <a href="https://www.facebook.com/samudithaa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/samuditha03/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/samuditha-balasooriya-9a570427a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Samudithaa" target="_blank"><i class="fab fa-github"></i></a>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <!---------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/aboutpoto.jpg" alt="About Me photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="aboutmepara">A dedicated Software Engineering student with expertise in web and software development. 
+                        Skilled in JavaScript, Python, C#, and PHP with hands-on experience in building dynamic 
+                        applications. Passionate about problem-solving, UI/UX design, and emerging technologies.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Building responsive and dynamic websites</li>
+                                <li><span>Windows Application</span><br>Developing Windows applications using C#</li>
+                                <li><span>Python & Java</span><br>Backend development and automation</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025 - Current</span><br>BEng (Hons) in Software Engineering at London Metropolitan University</li>
+                                <li><span>2023 - 2025</span><br>Higher National Diploma in Software Engineering at ESOFT Metro Campus</li>
+                            </ul>
+                        </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create visually appealing, responsive, and user-friendly websites tailored to your brand, ensuring a seamless browsing experience across all devices.</p>
+                </div>
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and engaging user interfaces with a strong focus on accessibility and usability, enhancing user satisfaction and interaction.</p>
+                </div>
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Design</h2>
+                    <p>I develop modern and interactive app designs that provide a smooth user experience, ensuring compatibility across multiple platforms.</p>
+                </div>
+            </div>            
+        </div>
+     </div>
+     <!------ My Strength------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Strength</h1>
+            <div class="current-stage">
+                <div>
+                    <h2>2<br>Clients</h2>
+                </div>
+                <div>
+                    <h2>10<br>Projects</h2>
+                </div>
+                <div>
+                    <h2>1<br>Year Experience</h2>
+                </div>
+            </div> 
+            
+        </div>
+     </div>
+     <!-- -------Projects---------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/project 1 grifindo.png" alt="">
+                    <div class="layer">
+                        <h3>Grifindo Toys System</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>ASP .NET</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="https://github.com/Samudithaa/Grifindo-Toys-Payroll-System" target="_blank">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="assets/project2-quiet.png" alt="">
+                    <div class="layer">
+                        <h3>Quiet Attic Films System</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>ASP .NET</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="https://github.com/Samudithaa/Quiet-Attic-Films-System" target="_blank">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="assets/project-3-malcolm.png" alt="">
+                    <div class="layer">
+                        <h3>Malcolm Lismore Photography</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                        <a href="https://github.com/Samudithaa/Malcolm-Lismore-Photography-Website" target="_blank">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!----------------- Contact--------------- -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i> samugbala@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +94 711 615 849</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/samudithaa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/samuditha03/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/samuditha-balasooriya-9a570427a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Samudithaa" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="assets/Modern Minimalist CV Resume (1).pdf" class="btn btn2">Download CV</a>                                   
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Samuditha Balasooriya. All rights reserved.</p>
+        </div>
+      </div>
+    <script>
+        function opentab(event, tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+    
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+    
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx7nUSbaWasHqZDimFRteVQD5IwOhqZ8fBcut-NHowQ4mjtdozwGQzro9Wmi9rzneMqjg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+        <script>
+            // Disable Right Click
+            document.addEventListener("contextmenu", function (event) {
+                event.preventDefault();
+            });
+
+            // Disable Text Copying
+            document.addEventListener("keydown", function (event) {
+                if (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "c" || event.key === "C" || event.key === "x" || event.key === "X" || event.key === "v" || event.key === "V")) {
+                    event.preventDefault();
+                }
+                if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+                    event.preventDefault();
+                }
+            });
+
+            // Detect DevTools
+            setInterval(function () {
+                if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+                    document.body.innerHTML = "Inspecting is disabled!";
+                }
+            }, 1000);
+        </script>
+    
+</body>
+</html>
