@@ -10,20 +10,17 @@ html{
 }
 
 body{
-    background: #080808;
-    color: #fff;
-    user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
+    background: linear-gradient(to right, #081115, #203a43, #081115); 
+    height: 100vh;
+    margin: 0;
+    color: white; 
 }
 
 #header{
-    width: 100%;
+    background: linear-gradient(to right, #081115, #203a43, #081115); 
     height: 100vh;
-    background-image: url(assets/myheader.jpg);
-    background-size: cover;
-    background-position: center;
+    margin: 0;
+    color: white; 
 }
 
 .container{
@@ -31,48 +28,114 @@ body{
 
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #232526, #08506f);
+    padding: 15px 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-.logo{
+.logo {
     width: 80px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px rgba(32, 32, 222, 0.7));
 }
 
-nav ul li{
+.logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0 15px;
+    position: relative;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    position: relative;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
 }
 
-nav ul li a::after{
+nav ul li a:hover {
+    color: #fff;
+    background: rgba(32, 32, 222, 0.2);
+}
+
+nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background: rgb(32, 32, 222);
+    background: linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
     position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-radius: 3px;
 }
 
 nav ul li a:hover::after {
     width: 100%;
+    left: 0;
+    transform: translateX(0);
 }
 
+/* Active state */
+nav ul li a.active {
+    color: #3f5efb;
+    font-weight: 600;
+}
+
+nav ul li a.active::after {
+    width: 100%;
+    background: #fc466b;
+}
+
+/* Responsive: Stack nav items on small screens */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 2%;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
 .header-text{
-    margin-top: 15%;
+    margin-top: 23%;
     font-size: 30px;
+    text-align: center;
 }
 
 .header-text h1{
@@ -81,7 +144,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span{
-    color: rgb(32, 32, 222);
+    color: rgb(90, 90, 218);
 }
 
 .social-icons-home {
@@ -156,7 +219,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background:  rgb(32, 32, 222);
+    background:  rgb(90, 90, 218);
     position: absolute;
     left:0;
     bottom: -8px;
@@ -174,7 +237,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span{
-    color:  rgb(75, 75, 230);
+    color: rgb(90, 90, 218);
     font-size: 14px;
     font-weight: 800;
 }
@@ -203,7 +266,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div{
-    background: #262626;
+    background: #0a1113;
     padding: 40px;
     font-size: 18px;
     font-weight: 300;
@@ -227,7 +290,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover{
-    background: rgb(32, 32, 222);
+    background: #203a43;
     transform: translateY(-10px);
 }
 
@@ -250,7 +313,7 @@ nav ul li a:hover::after {
 }
 
 .current-stage div{
-    background: #262626;
+    background: #0a1113;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -277,7 +340,7 @@ nav ul li a:hover::after {
 
 
 
-/* ----------portfolio-------- */
+/* ----------portfolio--------- */
 
 #portfolio{
     padding: 50px 0;
@@ -342,7 +405,6 @@ nav ul li a:hover::after {
     text-align: center;
 }
 
-
 .work:hover img{
     transform: scale(1.1);
 }
@@ -367,7 +429,6 @@ nav ul li a:hover::after {
 .layer ul li:not(:last-child) {
     margin-right: 8px; /* Add spacing between list items */
 }
-
 
 .work:hover .layer{
     height: 100%;
@@ -403,8 +464,6 @@ nav ul li a:hover::after {
 .social-icons a:hover {
     color: #007bff; /* Change color on hover */
 }
-
-
 
 
 /* ---------Contact left--------- */
@@ -489,7 +548,8 @@ nav .fas{
 
 @media only screen and (max-width: 600px) {
     #header{
-        background-image: url(assets/phone-background.jpg);
+        height: 100vh;
+        background: linear-gradient(to right, #081115, #203a43, #081115); 
     }
 
     .header-text{
@@ -504,10 +564,13 @@ nav .fas{
     nav .fas{
         display: block;
         font-size: 25px;
+        position: absolute;
+        right: 20px;
+        top: 20px; 
     }
 
     nav ul{
-        background: rgb(32, 32, 222);
+        background: rgb(90, 90, 218);
         position: fixed;
         top: 0;
         right: -200px;
